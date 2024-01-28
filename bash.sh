@@ -1,11 +1,9 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install stress-ng -y
-sudo apt-get install htop -y
-sudo apt-get install python3-pip -y
+python3 -m venv venv
+source venv/bin/activate
 pip3 install flask
-sudo apt-get install git -y
-cd /home/ubuntu
-git clone YOUR_GITHUB_REPO_LINK
-cd /home/ubuntu/YOUR_GITHUB_REPO_NAME
+sudo yum install git -y
+# cd /home/ubuntu
+git clone https://github.com/AishiHuang/cs498_cloud_computing.git
+cd cs498_cloud_computing
 python3 serve.py
