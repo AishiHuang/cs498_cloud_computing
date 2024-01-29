@@ -9,7 +9,7 @@ def serve():
 
     if request.method == 'POST':
         subprocess.Popen(["python", "stress_cpu.py"]) 
-        return 200
+        return "200"
 
     if request.method == 'GET':
         ip_address = socket.gethostname()
