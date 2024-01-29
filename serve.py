@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def serve():
-    global seed
 
     if request.method == 'POST':
         subprocess.Popen(["python", "stress_cpu.py"]) 
