@@ -9,7 +9,7 @@ def serve():
     global seed
 
     if request.method == 'POST':
-        subprocess.Popen(["python3", "stress_cpu.py"]) 
+        subprocess.Popen(["python", "stress_cpu.py"]) 
         
 
     if request.method == 'GET':
